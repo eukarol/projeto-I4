@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaTech - Chatbot para Termos Técnicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>LinguaTech</h1>
+        <p>Seu assistente para termos técnicos em inglês</p>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Input Section -->
+        <section class="input-section">
+            <h2>Pesquise um termo técnico</h2>
+            <div class="flex">
+                <input type="text" id="termInput" placeholder="Digite um termo ou expressão..." aria-label="Digite um termo ou expressão">
+                <button onclick="searchTerm()" aria-label="Pesquisar termo">Pesquisar</button>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results"></section>
+    </main>
+
+    <!-- Chatbot Section -->
+    <section id="chatContainer" class="container">
+        <div class="input-section">
+            <h2>Chatbot para Consultas Rápidas</h2>
+            <p>Utilize o chatbot abaixo se você não encontrou o termo desejado. Ele está aqui para ajudar com consultas rápidas sobre termos técnicos.</p>
+            <div id="chatBox" aria-live="polite"></div>
+            <div id="chatInputContainer">
+                <input type="text" id="chatInput" placeholder="Digite sua mensagem..." aria-label="Digite sua mensagem">
+                <button onclick="sendMessage()" aria-label="Enviar mensagem">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LinguaTech. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
